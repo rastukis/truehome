@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # ThirdParty
+    'rest_framework',
+    # APPs
+    'apps.persons'  # Personas
 ]
 
 MIDDLEWARE = [
@@ -118,3 +122,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#  Pepdrive
+PIPDRIVE_TOKEN = 'c2c7d6530e1a5543d829734465859d2677fbcaab'
+COMPANY_DOMAIN = 'personal-46024a'
+URL_PIPDRIVE = 'https://%s.pipedrive.com/v1' % COMPANY_DOMAIN
+
